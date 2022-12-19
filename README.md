@@ -1,2 +1,2 @@
 # DESIGN PATTERNS TERM PROJECTS
-Character customization in games, with using Decorator and Strategy Patterns.
+Ice cream shop design with Factory Method and Decorator Patterns.
