@@ -15,10 +15,12 @@ public class Main {
 
         do {
             System.out.println("""
-                    Which country flavor do you want to try? (Type the number only)
+                    Which country flavor do you want to try?
+                    (Type the number only)
                     1:Turkish\s
                     2:Italian\s
                     3:Japanese
+                    -1:Exit
                     """);
             System.out.print("Your choice:");
             int selection = sc.nextInt();
@@ -31,6 +33,9 @@ public class Main {
             } else if (selection == 3) {
                 a = 0;
                 factory = new JapanIceCreamFactory();
+            } else if (selection == -1) {
+                System.out.println("Have a good day!");
+                return;
             } else {
                 a++;
                 System.out.println("Invalid choice\n");

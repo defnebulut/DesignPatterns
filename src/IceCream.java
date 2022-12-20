@@ -3,27 +3,29 @@
  * @since 19.12.2022
  */
 public abstract class IceCream {
-    String name;
-    double cost;
-    String cone;
-    double intensity;
-    String wrappingPaper;
+    protected String name;
+    protected double cost;
+    protected String cone;
+    protected double intensity;
+    protected String wrappingPaper;
 
-    void prepare() {
+    public void prepare() {
         System.out.println(name + " is preparing with intensity of "
-                + intensity);
-        System.out.println("Adding Sugar, spice, and everything nice\n" +
-                "These were the ingredients chosen\n" +
-                "To create the perfect ice cream\n");
+                + intensity+"\n");
+        System.out.println("""
+                Adding Sugar, spice, and everything nice
+                These were the ingredients chosen
+                To create the perfect ice cream
+                """);
     }
 
-    void packaging() {
+    public void packaging() {
         System.out.println("Placed into the " + cone);
-        System.out.println("Wrapped with " + wrappingPaper);
+        System.out.println("Wrapped with " + wrappingPaper +"\n");
     }
 
-    abstract double cost();
-    String getDescription(){
+    protected abstract double cost();
+    public String getDescription(){
         return name;
     }
 }

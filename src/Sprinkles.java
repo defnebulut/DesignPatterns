@@ -2,7 +2,7 @@
  * @author Defne BULUT & Kaan AKGUN
  * @since 19.12.2022
  */
-public class Sprinkles extends CondimentDecorator{
+public class Sprinkles extends IceCreamDecorator {
     IceCream iceCream;
 
     public Sprinkles(IceCream iceCream){
