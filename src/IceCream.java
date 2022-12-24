@@ -8,10 +8,11 @@ public abstract class IceCream {
     protected String cone;
     protected double intensity;
     protected String wrappingPaper;
+    protected String milk;
 
     public void prepare() {
-        System.out.println(name + " is preparing with intensity of "
-                + intensity+"\n");
+        System.out.println(name + " is prepared with " + milk +
+                " and " + intensity+" intensity.\n");
         System.out.println("""
                 Adding Sugar, spice, and everything nice
                 These were the ingredients chosen

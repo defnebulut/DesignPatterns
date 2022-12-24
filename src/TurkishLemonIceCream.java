@@ -9,6 +9,7 @@ public class TurkishLemonIceCream extends IceCream{
         wrappingPaper = "Red paper with pink flowers";
         cone = "Cake Cone";
         cost = 4.5;
+        milk = "Low fat milk";
     }
     public double cost(){
         return cost;
