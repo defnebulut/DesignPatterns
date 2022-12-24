@@ -29,4 +29,27 @@ public abstract class IceCream {
     public String getDescription(){
         return name;
     }
+
+    public void setMilk(String milk){
+        this.milk = milk;
+    }
+    public void setCost(double cost){
+        this.cost = cost;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCone(String cone) {
+        this.cone = cone;
+    }
+
+    public void setIntensity(double intensity) {
+        this.intensity = intensity;
+    }
+
+    public void setWrappingPaper(String wrappingPaper) {
+        this.wrappingPaper = wrappingPaper;
+    }
 }
